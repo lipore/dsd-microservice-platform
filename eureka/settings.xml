@@ -1,0 +1,26 @@
+<settings>
+    <repositories>
+        <repository>
+            <id>cdp-local</id>
+            <name>CDP Local Repository</name>
+            <url>http://10.201.10.31:30000/repository/maven-public/</url>
+            <releases>
+                <updatePolicy>daily</updatePolicy><!-- never,always,interval n -->
+                <enabled>true</enabled>
+                <checksumPolicy>warn</checksumPolicy><!-- fail,ignore -->
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <layout>default</layout>
+        </repository>
+    </repositories>
+    <mirrors>
+        <mirror>
+            <id> maven-net-cn</id>      
+            <name> Maven China Mirror</name>      
+            <url> http://10.201.10.31:30000/repository/maven-public/</url>      
+            <mirrorOf> central</mirrorOf> 
+        </mirror>
+    </mirrors>
+</settings>

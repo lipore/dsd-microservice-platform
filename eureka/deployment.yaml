@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: eureka
+spec:
+  selector:
+    matchLabels:
+      app: eureka
+  template:
+    metadata:
+      labels:
+        app: eureka
+    spec:
+      containers:
+      - name: eureka
+        image: 172.16.24.85:5000/spring/eureka:latest
+        resources:
+          limits:
+            memory: "1024Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 8761
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: eureka
+spec:
+  selector:
+    app: eureka
+  type: NodePort
+  ports:
+  - port: 8761
+    targetPort: 8761
+    nodePort: 30205
+
