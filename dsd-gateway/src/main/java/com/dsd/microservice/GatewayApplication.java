@@ -10,7 +10,7 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
  */
 @SpringBootApplication
 @EnableZuulProxy
-@EnableApolloConfig
+//@EnableApolloConfig
 public class GatewayApplication {
 
     public static void main(String[] args) {

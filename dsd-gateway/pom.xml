@@ -36,6 +36,11 @@
             <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+        </dependency>
+
         <!--<dependency>-->
             <!--<groupId>io.micrometer</groupId>-->
             <!--<artifactId>micrometer-registry-prometheus</artifactId>-->
@@ -54,6 +59,12 @@
         <dependency>
             <groupId>com.ctrip.framework.apollo</groupId>
             <artifactId>apollo-client</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>2.3.10</version>
         </dependency>
 
     </dependencies>
