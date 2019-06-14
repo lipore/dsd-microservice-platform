@@ -1,0 +1,3 @@
+[submodule "mall-oauth"]
+	path = mall-oauth
+	url = git@e.coding.net:hpower/oauth.git
